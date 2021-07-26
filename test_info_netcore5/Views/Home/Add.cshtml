@@ -1,0 +1,47 @@
+﻿@model test_info_netcore5.Models.Clients
+
+@{
+    ViewData["Title"] = "Add";
+}
+
+<h1>Agregar Clientes</h1>
+<br />
+
+<hr />
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="text-danger">
+            @ViewBag.error
+        </div>
+        <form asp-action="Add" method="post">
+            <div class="mb-3">
+                <label asp-for="Firstname" class="form-label">Nombre</label>
+                <input asp-for="Firstname" class="form-control">
+                <span asp-validation-for="Firstname" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Lastname" class="form-label">Apellido</label>
+                <input asp-for="Lastname" class="form-control">
+                <span asp-validation-for="Lastname" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Address" class="form-label">Dirección</label>
+                <input asp-for="Address" class="form-control">
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Nit" class="form-label">Nit</label>
+                <input asp-for="Nit" class="form-control">
+                <span asp-validation-for="Nit" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <input type="submit" value="Guardar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
