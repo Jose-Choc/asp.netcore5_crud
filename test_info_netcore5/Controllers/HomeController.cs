@@ -12,7 +12,7 @@ using test_info_netcore5.Models;
 
 namespace test_info_netcore5.Controllers
 {
-    //[Authorize]
+    [Authorize]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;

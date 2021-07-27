@@ -17,22 +17,22 @@
             <input type="hidden" asp-for="Id" />
             <div class="form-group">
                 <label asp-for="Firstname" class="control-label">Nombre</label>
-                <input asp-for="Firstname" class="form-control" />
+                <input asp-for="Firstname" class="form-control" required />
                 <span asp-validation-for="Firstname" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Lastname" class="control-label">Apellido</label>
-                <input asp-for="Lastname" class="form-control" />
+                <input asp-for="Lastname" class="form-control" required />
                 <span asp-validation-for="Lastname" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Address" class="control-label">Dirección</label>
-                <input asp-for="Address" class="form-control" />
+                <input asp-for="Address" class="form-control" required />
                 <span asp-validation-for="Address" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Nit" class="control-label">Nit</label>
-                <input asp-for="Nit" class="form-control" />
+                <input asp-for="Nit" class="form-control" required/>
                 <span asp-validation-for="Nit" class="text-danger"></span>
             </div>
             <div class="form-group">
