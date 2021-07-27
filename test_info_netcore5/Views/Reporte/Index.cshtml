@@ -1,0 +1,39 @@
+﻿@model IEnumerable<test_info_netcore5.Models.Clients>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "_layout";
+}
+
+<br />
+<div class=" row justify-content-around">
+    <h3 class="text-center">Reporte de Clientes</h3>
+
+</div>
+<br />
+<br />
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
+            <th scope="col">Dirección</th>
+            <th scope="col">Nit</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Clients cliente in Model)
+        {
+            <tr>
+                <th scope="row">@cliente.Id</th>
+                <td>@cliente.Firstname</td>
+                <td>@cliente.Lastname</td>
+                <td>@cliente.Address</td>
+                <td>@cliente.Nit</td>
+            </tr>
+        }
+
+    </tbody>
+</table>
+
+
